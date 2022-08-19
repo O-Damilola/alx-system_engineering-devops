@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-#Creating a script that lists files
-for val in *
-do
-    readarray -d - -t newarr <<< "$val"
-    echo "${newarr[1]}"
+for val in *; do
+    echo "$( cut -d '-' -f 2- <<< "$val" )"
 done
+
