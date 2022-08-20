@@ -4,4 +4,3 @@
 for val in *; do
     echo "$( cut -d '-' -f 2- <<< "$val" )"
 done
-
